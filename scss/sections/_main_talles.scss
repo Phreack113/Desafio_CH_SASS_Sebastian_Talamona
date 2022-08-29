@@ -1,0 +1,23 @@
+.main{
+    .form{
+        table{
+            width: 90%;
+            margin: 0 auto;
+            tr{
+                th{
+                    margin: 10px;
+                    padding: 10px;
+                    background-color: green;
+                    color: white;
+                    text-align: center;
+                }
+                td {
+                    margin: 10px;
+                    padding: 10px;
+                    background-color: white;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

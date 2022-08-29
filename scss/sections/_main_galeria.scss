@@ -1,0 +1,61 @@
+.main{
+    .galeria{
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        .container-grid {  
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px 200px;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "img1 img2 img2"
+            "img1 img5 img6"
+            "img4 img5 img7"
+            "img8 img3 img3";
+            
+            .cont-img{
+                border: solid white 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                transition: transform .2s;
+
+                &:hover{
+                    transform: scale(1.1);
+                  }
+                
+                img{
+                    height: 100%;
+                }
+            }
+            .img1 { grid-area: img1; }
+            .img2 { grid-area: img2; }
+            .img3 { grid-area: img3; }
+            .img4 { grid-area: img4; }
+            .img5 { grid-area: img5; }
+            .img6 { grid-area: img6; }
+            .img7 { grid-area: img7; }
+            .img8 { grid-area: img8; }
+        }
+    }
+}
+
+@media (min-width: 850px) {
+    .main{
+        .galeria{
+            .container-grid { 
+            grid-template-columns: 200px 200px 200px 200px ;
+            grid-template-rows: 200px 200px 200px ;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "img1 img2 img2 img6"
+            "img1 img5 img3 img3"
+            "img4 img5 img7 img8";
+            }
+        }
+    }
+}

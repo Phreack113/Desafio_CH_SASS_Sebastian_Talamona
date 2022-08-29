@@ -1,0 +1,63 @@
+.main{
+    .card{
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        .card-top {
+            background-color: rgb(236, 236, 236);
+            img{
+                width: 100%;
+            }
+        }
+        .card-bottom {
+            background-color: rgb(236, 236, 236);
+            padding: 15px;
+            h2{
+                padding-bottom: 5px;
+            }
+        }
+    }    
+}
+
+/* Medias Querys */
+@media(min-width: 768px) {
+    .main{
+        .card{
+            display: flex;
+            flex-direction: row;
+            .card-top {
+                width: 40%;
+            }
+            .card-bottom {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .main{
+        .card{
+            p {
+                font-size: larger;
+            }
+        } 
+    }
+}
+
+@media (min-width: 1300px) {
+    .main{
+        .card {
+            margin: 20px;
+            .card-bottom {
+                padding: 20px;
+            }
+            p {
+                font-size: 25px;
+            }
+            h2 {
+                font-size: 40px;
+            }
+        }
+    }
+}

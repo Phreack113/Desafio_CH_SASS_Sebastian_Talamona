@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat:wght@900&family=Quicksand:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main{
+    .banner{
+        width: 100%;
+    }
+    h1 {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+} 
+
+@import './sections/footer';
+// @import './sections/header';
+@import './sections/main_index';
+@import './sections/main_contactos';
+@import './sections/main_galeria';
+@import './sections/main_nosotros';
+@import './sections/main_productos';
+@import './sections/main_talles';
