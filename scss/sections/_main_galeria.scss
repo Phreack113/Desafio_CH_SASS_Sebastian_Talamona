@@ -1,9 +1,7 @@
 .main{
     .galeria{
         margin: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include d(flex, row, center);
         
         .container-grid {  
             display: grid;

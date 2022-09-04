@@ -3,9 +3,8 @@
     padding-bottom: 5px;
     background-color: rgb(250, 250, 250);
     .sm{
-        display: flex;
+        @include d(flex, row, center);        
         width: 100%;
-        justify-content: center;
         .smLogo{
             width: 8vh;
             margin: 5px 10px;

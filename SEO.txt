@@ -1,0 +1,28 @@
+Incorporé los siguientes elementos por html:
+
+* Index:
+    - Etiqueta Title
+    - Keywords
+    - Description
+* Contacto:
+    - Etiqueta Title
+    - Keywords
+    - Description
+* Galería:
+    - Etiqueta Title
+    - Keywords
+    - Description
+* Nosotros:
+    - Etiqueta Title
+    - Keywords
+    - Description
+* Productos:
+    - Etiqueta Title
+    - Keywords
+    - Description
+* Talles:
+    - Etiqueta Title
+    - Keywords
+    - Description
+
+Adicionalmente el contenido se encuentra organizado dentro de la carpeta pages

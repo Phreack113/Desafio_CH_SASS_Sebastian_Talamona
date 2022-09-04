@@ -15,7 +15,18 @@ main{
         margin-left: 20px;
         margin-top: 10px;
     }
-} 
+}
+
+// Clase reutilizada con @mixin en _footer y _main_galeria
+@mixin d($type, $direction, $jc) {
+    display: $type;
+    flex-direction: $direction;
+    justify-content: $jc;
+}
+// Clase reutilizada con @extend en _header y  _main_index
+.b-b{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
 
 @import './sections/footer';
 @import './sections/header';
