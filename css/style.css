@@ -76,8 +76,10 @@ header .nav-color {
 
 .main .form {
   background-color: #ececec;
-  padding: 20px;
-  margin: 10px 0; }
+  padding: 20px; }
+  .main .form label {
+    margin-bottom: 4px;
+    margin-left: 2px; }
   .main .form .form-item {
     padding: 10px !important;
     font-size: large;

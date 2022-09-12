@@ -2,7 +2,11 @@
     .form{
         background-color: rgb(236, 236, 236);
         padding: 20px;
-        margin: 10px 0;
+        // margin: 10px 0;
+        label{
+            margin-bottom: 4px;
+            margin-left: 2px;
+        }
         .form-item {
             padding: 10px !important; 
             font-size: large;
