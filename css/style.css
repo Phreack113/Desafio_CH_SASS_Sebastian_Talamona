@@ -79,7 +79,8 @@ header .nav-color {
   padding: 20px;
   margin: 10px 0; }
   .main .form input {
-    height: 30px; }
+    height: 30px;
+    padding: 10px; }
   .main .form .form-item {
     font-size: large;
     width: 100%;
