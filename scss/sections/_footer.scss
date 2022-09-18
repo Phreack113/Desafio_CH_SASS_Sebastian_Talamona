@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 5px;
-    height: 75px;
+    padding: 10px;
+    height: 85px;
     background-color: rgb(250, 250, 250);
     .sm{
         @include d(flex, row, center);        
