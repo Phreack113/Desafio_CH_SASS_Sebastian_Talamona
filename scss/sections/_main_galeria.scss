@@ -1,11 +1,11 @@
 .main{
     .galeria{
-        margin: 20px;
+        margin: 20px 20px;
         @include d(flex, row, center);
         
         .container-grid {  
             display: grid;
-            grid-template-columns: 200px 200px 200px;
+            grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 200px 200px 200px 200px;
             gap: 0px 0px;
             grid-auto-flow: row;
@@ -20,10 +20,10 @@
                 overflow: hidden;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 transition: transform .2s;
-
+                
                 &:hover{
                     transform: scale(1.1);
-                  }
+                }
                 
                 img{
                     height: 100%;
@@ -44,15 +44,16 @@
 @media (min-width: 850px) {
     .main{
         .galeria{
+            margin: 20px 100px;
             .container-grid { 
-            grid-template-columns: 200px 200px 200px 200px ;
-            grid-template-rows: 200px 200px 200px ;
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            grid-template-areas:
-            "img1 img2 img2 img6"
-            "img1 img5 img3 img3"
-            "img4 img5 img7 img8";
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 200px 200px 200px ;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                "img1 img2 img2 img6"
+                "img1 img5 img3 img3"
+                "img4 img5 img7 img8";
             }
         }
     }

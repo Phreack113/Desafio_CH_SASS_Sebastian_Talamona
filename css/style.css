@@ -5,19 +5,23 @@
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif; }
 
-main .banner {
-  width: 100%; }
-
-main h1 {
-  margin-left: 20px;
-  margin-top: 10px; }
+main {
+  min-height: calc(100vh - 75px); }
+  main .banner {
+    width: 100%; }
+  main h1 {
+    margin-left: 20px;
+    margin-top: 10px; }
 
 .b-b, header .nav-color, .main .collection {
   border-bottom: 2px solid rgba(255, 255, 255, 0.4); }
 
 .footer {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px;
+  height: 75px;
   background-color: #fafafa; }
   .footer .sm {
     display: flex;
@@ -25,12 +29,13 @@ main h1 {
     justify-content: center;
     width: 100%; }
     .footer .sm .smLogo {
-      width: 8vh;
-      margin: 5px 10px; }
+      width: 40px;
+      margin: 0 10px; }
   .footer p {
     width: 100%;
     text-align: center;
-    font-size: small; }
+    font-size: small;
+    margin-bottom: 0 !important; }
 
 @media (min-width: 1024px) {
   .footer p {
@@ -104,13 +109,13 @@ header .nav-color {
     margin: 10px 10vw; } }
 
 .main .galeria {
-  margin: 20px;
+  margin: 20px 20px;
   display: flex;
   flex-direction: row;
   justify-content: center; }
   .main .galeria .container-grid {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 200px 200px 200px 200px;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -142,12 +147,14 @@ header .nav-color {
       grid-area: img8; }
 
 @media (min-width: 850px) {
-  .main .galeria .container-grid {
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "img1 img2 img2 img6" "img1 img5 img3 img3" "img4 img5 img7 img8"; } }
+  .main .galeria {
+    margin: 20px 100px; }
+    .main .galeria .container-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 200px 200px 200px;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas: "img1 img2 img2 img6" "img1 img5 img3 img3" "img4 img5 img7 img8"; } }
 
 .main .card {
   margin: 20px 0;
